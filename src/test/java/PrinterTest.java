@@ -27,7 +27,7 @@ public class PrinterTest {
         printer.print(4,3);
         assertEquals(2, printer.getPagesLeft());
     }
-    
+
     @Test
     public void printTwoCopiesOfFivePages(){
         printer.print(5,2);
