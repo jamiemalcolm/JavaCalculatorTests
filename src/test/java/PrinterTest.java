@@ -33,4 +33,10 @@ public class PrinterTest {
         printer.print(5,2);
         assertEquals(0, printer.getPagesLeft());
     }
+
+    @Test
+    public void printOneCopiesOf11Pages(){
+        printer.print(11,1);
+        assertEquals(10, printer.getPagesLeft());
+    }
 }
